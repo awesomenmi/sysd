@@ -65,3 +65,11 @@ tcp    LISTEN     0      128    [::]:8002               [::]:*                  
 curl localhost:8000
 curl localhost:8001
 ```
+
+### jira
+
+[jira.service](https://github.com/awesomenmi/sysd/blob/master/jira/jira.service)
+
+```
+sudo systemctl status jira
+```
