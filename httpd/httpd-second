@@ -1,0 +1,4 @@
+# /etc/sysconfig/httpd-second
+PORT=8002
+PID_FILE=/etc/httpd/run/httpd-second.pid
+

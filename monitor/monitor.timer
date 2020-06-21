@@ -1,0 +1,10 @@
+[Unit]
+Description=Run monitor script every 30 second
+
+[Timer]
+# Run every 30 second
+OnUnitActiveSec=30
+Unit=monitor.service
+
+[Install]
+WantedBy=multi-user.target

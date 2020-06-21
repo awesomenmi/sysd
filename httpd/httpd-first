@@ -1,0 +1,4 @@
+# /etc/sysconfig/httpd-first
+PORT=8001
+PID_FILE=/etc/httpd/run/httpd-first.pid
+
