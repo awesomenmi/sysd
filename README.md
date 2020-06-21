@@ -73,3 +73,26 @@ curl localhost:8001
 ```
 sudo systemctl status jira
 ```
+```
+[vagrant@sysd ~]$ sudo systemctl status jira 
+● jira.service - Atlassian Jira
+   Loaded: loaded (/usr/lib/systemd/system/jira.service; enabled; vendor preset: disabled)
+   Active: active (running) since Sun 2020-06-21 14:36:05 UTC; 2min 22s ago
+  Process: 28818 ExecStart=/opt/jira/bin/start-jira.sh (code=exited, status=0/SUCCESS)
+ Main PID: 28855 (java)
+   Memory: 318.6M (limit: 1000.0M)
+   CGroup: /system.slice/jira.service
+           └─28855 /usr/bin/java -Djava.util.logging.config.file=/opt/jira/conf/loggin...
+
+Jun 21 14:36:05 sysd start-jira.sh[28818]: MMMMMM
+Jun 21 14:36:05 sysd start-jira.sh[28818]: +MMMMM
+Jun 21 14:36:05 sysd start-jira.sh[28818]: MMMMM
+Jun 21 14:36:05 sysd start-jira.sh[28818]: `UOJ
+Jun 21 14:36:05 sysd start-jira.sh[28818]: Atlassian Jira
+Jun 21 14:36:05 sysd start-jira.sh[28818]: Version : 8.5.5
+Jun 21 14:36:05 sysd start-jira.sh[28818]: If you encounter issues starting or stopp...on
+Jun 21 14:36:05 sysd start-jira.sh[28818]: Server startup logs are located in /opt/j...ut
+Jun 21 14:36:05 sysd systemd[1]: Started Atlassian Jira.
+Jun 21 14:36:05 sysd start-jira.sh[28818]: Tomcat started.
+Hint: Some lines were ellipsized, use -l to show in full.
+```
