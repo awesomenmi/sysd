@@ -1,0 +1,17 @@
+[Unit]
+Description=Atlassian Jira
+After=network.target
+
+[Service] 
+Type=forking
+User=root
+PIDFile=/opt/jira/work/catalina.pid
+ExecStart=/opt/jira/bin/start-jira.sh
+ExecStop=/opt/jira/bin/stop-jira.sh
+SuccessExitStatus=143
+MemoryLimit=1000M
+CPUQuota=20%
+
+[Install] 
+WantedBy=multi-user.target 
+
